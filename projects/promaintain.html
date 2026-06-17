@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProMaintain — Case Study</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.case-header { padding-top: 120px; background: linear-gradient(135deg, #059669 0%, #34d399 100%); color: #fff; }
+.case-header .container { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.case-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
+.case-header .meta { display: flex; gap: 24px; color: #a7f3d0; font-size: .9rem; }
+.case-header .mockup { background: rgba(255,255,255,.1); border-radius: 12px; padding: 40px; text-align: center; font-size: 4rem; font-weight: 700; }
+.case-body { padding: 60px 0; }
+.case-body h2 { font-size: 1.5rem; font-weight: 700; margin: 40px 0 16px; }
+.case-body h2:first-child { margin-top: 0; }
+.case-body p { color: var(--gray); margin-bottom: 16px; line-height: 1.7; }
+.case-body ul { list-style: none; margin-bottom: 24px; }
+.case-body ul li { padding: 8px 0 8px 24px; position: relative; color: var(--gray); }
+.case-body ul li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+.back-link { display: inline-block; margin-bottom: 24px; color: var(--gray); text-decoration: none; font-size: .9rem; }
+.back-link:hover { color: var(--primary); }
+@media (max-width: 768px) { .case-header .container { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav><div class="container"><a href="../index.html" class="logo">dev<span>.</span></a></div></nav>
+
+<section class="case-header">
+  <div class="container">
+    <div>
+      <a href="../index.html#work" class="back-link" style="color: #a7f3d0;">← Back to work</a>
+      <h1>ProMaintain</h1>
+      <p style="color: #d1fae5; font-size: 1.1rem; margin-bottom: 24px;">Custom maintenance management portal</p>
+      <div class="meta"><span>Laravel + React</span><span>12 weeks</span><span>White-label</span></div>
+    </div>
+    <div class="mockup">PM</div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="container">
+    <h2>The brief</h2>
+    <p>A UK facilities management company handling 200+ commercial properties needed a custom web application to replace their spreadsheet-based workflow. Their clients needed to log maintenance requests, track job status, and download reports.</p>
+
+    <h2>What I built</h2>
+    <ul>
+      <li>Laravel backend with RESTful API</li>
+      <li>React SPA dashboard for clients and admins</li>
+      <li>Job ticketing system with priority levels and auto-assignment</li>
+      <li>Real-time status updates via WebSockets</li>
+      <li>Automated PDF report generation (weekly/monthly)</li>
+      <li>Email notifications at every workflow stage</li>
+      <li>Role-based access (admin, manager, client, engineer)</li>
+    </ul>
+
+    <h2>Tech stack</h2>
+    <p>Laravel 11, React 18, Inertia.js, PostgreSQL, Laravel Echo, DomPDF, Tailwind CSS</p>
+
+    <h2>Result</h2>
+    <p>Job completion time reduced by 40%. Client satisfaction score went from 3.2 to 4.8. 200+ properties managed through the system within 3 months of launch.</p>
+  </div>
+</section>
+
+<footer><div class="container">&copy; 2026 — Case study</div></footer>
+</body>
+</html>

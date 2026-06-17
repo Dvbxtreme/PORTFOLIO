@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightLead — Case Study</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.case-header { padding-top: 120px; background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%); color: #fff; }
+.case-header .container { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.case-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
+.case-header .meta { display: flex; gap: 24px; color: #fde68a; font-size: .9rem; }
+.case-header .mockup { background: rgba(255,255,255,.1); border-radius: 12px; padding: 40px; text-align: center; font-size: 4rem; font-weight: 700; }
+.case-body { padding: 60px 0; }
+.case-body h2 { font-size: 1.5rem; font-weight: 700; margin: 40px 0 16px; }
+.case-body h2:first-child { margin-top: 0; }
+.case-body p { color: var(--gray); margin-bottom: 16px; line-height: 1.7; }
+.case-body ul { list-style: none; margin-bottom: 24px; }
+.case-body ul li { padding: 8px 0 8px 24px; position: relative; color: var(--gray); }
+.case-body ul li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+.back-link { display: inline-block; margin-bottom: 24px; color: var(--gray); text-decoration: none; font-size: .9rem; }
+.back-link:hover { color: var(--primary); }
+@media (max-width: 768px) { .case-header .container { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav><div class="container"><a href="../index.html" class="logo">dev<span>.</span></a></div></nav>
+
+<section class="case-header">
+  <div class="container">
+    <div>
+      <a href="../index.html#work" class="back-link" style="color: #fde68a;">← Back to work</a>
+      <h1>BrightLead</h1>
+      <p style="color: #fef3c7; font-size: 1.1rem; margin-bottom: 24px;">Conversion-optimised landing page</p>
+      <div class="meta"><span>HTML/CSS</span><span>2 weeks</span><span>White-label</span></div>
+    </div>
+    <div class="mockup">BL</div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="container">
+    <h2>The brief</h2>
+    <p>A UK lead generation agency needed a high-converting landing page for their new B2B service. The page needed to capture qualified leads, integrate with HubSpot, and load in under 2 seconds on mobile.</p>
+
+    <h2>What I built</h2>
+    <ul>
+      <li>Custom landing page with mobile-first responsive design</li>
+      <li>HubSpot CRM integration via API (form submissions → contacts)</li>
+      <li>A/B testing setup with Google Optimize (3 variants)</li>
+      <li>Performance optimised — 98 Lighthouse score</li>
+      <li>Animated micro-interactions for engagement</li>
+      <li>GDPR-compliant cookie consent and form checkboxes</li>
+    </ul>
+
+    <h2>Tech stack</h2>
+    <p>HTML5, CSS3, JavaScript, HubSpot API, Google Optimize, Netlify</p>
+
+    <h2>Result</h2>
+    <p>32% conversion rate (industry average: 12%). 450+ leads captured in the first month. Page loads in 0.8s on 4G.</p>
+  </div>
+</section>
+
+<footer><div class="container">&copy; 2026 — Case study</div></footer>
+</body>
+</html>

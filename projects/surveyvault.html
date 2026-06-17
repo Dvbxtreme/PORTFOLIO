@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SurveyVault — Case Study</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.case-header { padding-top: 120px; background: linear-gradient(135deg, #1e3a5f 0%, #2d6a9f 100%); color: #fff; }
+.case-header .container { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.case-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
+.case-header .meta { display: flex; gap: 24px; color: #94a3b8; font-size: .9rem; }
+.case-header .mockup { background: rgba(255,255,255,.1); border-radius: 12px; padding: 40px; text-align: center; font-size: 4rem; font-weight: 700; }
+.case-body { padding: 60px 0; }
+.case-body h2 { font-size: 1.5rem; font-weight: 700; margin: 40px 0 16px; }
+.case-body h2:first-child { margin-top: 0; }
+.case-body p { color: var(--gray); margin-bottom: 16px; line-height: 1.7; }
+.case-body ul { list-style: none; margin-bottom: 24px; }
+.case-body ul li { padding: 8px 0 8px 24px; position: relative; color: var(--gray); }
+.case-body ul li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+.back-link { display: inline-block; margin-bottom: 24px; color: var(--gray); text-decoration: none; font-size: .9rem; }
+.back-link:hover { color: var(--primary); }
+@media (max-width: 768px) { .case-header .container { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav><div class="container"><a href="../index.html" class="logo">dev<span>.</span></a></div></nav>
+
+<section class="case-header">
+  <div class="container">
+    <div>
+      <a href="../index.html#work" class="back-link" style="color: #94a3b8;">← Back to work</a>
+      <h1>SurveyVault</h1>
+      <p style="color: #cbd5e1; font-size: 1.1rem; margin-bottom: 24px;">Corporate website for a UK surveying company</p>
+      <div class="meta"><span>WordPress</span><span>6 weeks</span><span>White-label</span></div>
+    </div>
+    <div class="mockup">SV</div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="container">
+    <h2>The brief</h2>
+    <p>A UK-based property surveying company needed a professional website to replace their outdated 5-page site. The new site needed to establish trust with homeowners and estate agents, showcase their services clearly, and generate qualified leads through contact form submissions.</p>
+
+    <h2>What I built</h2>
+    <ul>
+      <li>12-page WordPress site with custom Gutenberg blocks</li>
+      <li>Online booking calendar integrated with Calendly</li>
+      <li>Service pages with detailed SEO-optimised content</li>
+      <li>Interactive property search by postcode</li>
+      <li>Client portal for report downloads (password protected)</li>
+      <li>Google Maps integration showing coverage area</li>
+    </ul>
+
+    <h2>Tech stack</h2>
+    <p>WordPress, ACF Pro, Custom Post Types, PHP, MySQL, SCSS, Leaflet.js</p>
+
+    <h2>Result</h2>
+    <p>10× increase in contact form submissions within the first 3 months. Page load time under 1.2s. Keyword rankings on page 1 for "surveyor [city]" across 6 locations.</p>
+  </div>
+</section>
+
+<footer><div class="container">&copy; 2026 — Case study</div></footer>
+</body>
+</html>

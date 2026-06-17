@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coffee Club — Case Study</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.case-header { padding-top: 120px; background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%); color: #fff; }
+.case-header .container { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.case-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
+.case-header .meta { display: flex; gap: 24px; color: #ddd6fe; font-size: .9rem; }
+.case-header .mockup { background: rgba(255,255,255,.1); border-radius: 12px; padding: 40px; text-align: center; font-size: 4rem; font-weight: 700; }
+.case-body { padding: 60px 0; }
+.case-body h2 { font-size: 1.5rem; font-weight: 700; margin: 40px 0 16px; }
+.case-body h2:first-child { margin-top: 0; }
+.case-body p { color: var(--gray); margin-bottom: 16px; line-height: 1.7; }
+.case-body ul { list-style: none; margin-bottom: 24px; }
+.case-body ul li { padding: 8px 0 8px 24px; position: relative; color: var(--gray); }
+.case-body ul li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+.back-link { display: inline-block; margin-bottom: 24px; color: var(--gray); text-decoration: none; font-size: .9rem; }
+.back-link:hover { color: var(--primary); }
+@media (max-width: 768px) { .case-header .container { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav><div class="container"><a href="../index.html" class="logo">dev<span>.</span></a></div></nav>
+
+<section class="case-header">
+  <div class="container">
+    <div>
+      <a href="../index.html#work" class="back-link" style="color: #ddd6fe;">← Back to work</a>
+      <h1>The Coffee Club</h1>
+      <p style="color: #e9d5ff; font-size: 1.1rem; margin-bottom: 24px;">Full WooCommerce store with subscription model</p>
+      <div class="meta"><span>WooCommerce</span><span>8 weeks</span><span>White-label</span></div>
+    </div>
+    <div class="mockup">TC</div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="container">
+    <h2>The brief</h2>
+    <p>A premium coffee roastery based in Yorkshire needed a complete e-commerce solution. They wanted to sell individual products, offer subscription boxes, and manage wholesale orders for cafés — all from one platform.</p>
+
+    <h2>What I built</h2>
+    <ul>
+      <li>Custom WooCommerce theme with unique coffee-shop aesthetic</li>
+      <li>Subscription engine for weekly/monthly coffee deliveries</li>
+      <li>Stripe payment gateway with saved cards</li>
+      <li>Wholesale pricing tier with minimum order quantities</li>
+      <li>Stock management with low-stock email alerts</li>
+      <li>Multi-currency support (£, €, $)</li>
+    </ul>
+
+    <h2>Tech stack</h2>
+    <p>WooCommerce, Custom Theme, Stripe, PHP, SCSS, Mailchimp integration</p>
+
+    <h2>Result</h2>
+    <p>£12k in revenue in the first month. 85 active subscribers. Average order value of £32. Site loads in under 1s with full page caching.</p>
+  </div>
+</section>
+
+<footer><div class="container">&copy; 2026 — Case study</div></footer>
+</body>
+</html>
